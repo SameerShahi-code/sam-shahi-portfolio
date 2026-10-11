@@ -15,7 +15,9 @@ export default defineConfig({
         crawlLinks: false,
       },
     }),
-    nitro(),
+    nitro({
+      preset: "netlify",
+    }),
     viteReact(),
     tailwindcss(),
     tsconfigPaths(),
